@@ -17,7 +17,7 @@
   <div class="module-screen">
   </div>
 
-  <form action="./php/verifica_cadastro.php" method="POST">
+  <form action="./php/valida_login.php" method="POST">
     <div class="login_area">
       <img src="./assets/ERP-logo.svg" alt="Logo do ERP Solar">
       <input type="text" name="user" placeholder="user" />
