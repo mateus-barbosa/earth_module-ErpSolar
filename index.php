@@ -20,8 +20,8 @@
   <form action="./php/valida_login.php" method="POST">
     <div class="login_area">
       <img src="./assets/ERP-logo.svg" alt="Logo do ERP Solar">
-      <input type="text" name="user" placeholder="user" />
-      <input type="password" name="password" placeholder="password" />
+      <input type="email" name="user" placeholder="email@dominio.com" />
+      <input type="password" name="password" placeholder="password" required />
       <button type="submit">Login</button>
       <label>Click here to <a href="#">register</a></label>
       <footer>

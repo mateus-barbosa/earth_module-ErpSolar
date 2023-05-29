@@ -1,15 +1,12 @@
 <?php
-include "connect_db.php";
+include_once './connect_db.php';
+$bd_connection = connection();
 
 $user = $_POST['user'];
 $pass = $_POST['password'];
 
-// Validação simples de dados, sem levar em consideração senha por enquanto
-$sql = "SELECT nm_funcionario from funcionarios WHERE nm_funcionario = '$user'";
-// Erro! Motivo: Banco sem tabelas
+$sql = "SELECT * from usuarios WHERE ds_usuario_email = '$user' && senha_usuario = '$pass'";
 
-if (mysqli_query($conn, $sql)) {
-  echo "Usuário encontrado";
-} else {
-  echo "Não encontrado";
+if ($sql != null) {
+  echo "Conexão realizada com sucesso";
 }
