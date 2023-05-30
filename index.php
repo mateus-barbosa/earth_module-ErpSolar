@@ -23,7 +23,7 @@
       <input type="email" name="user" placeholder="email@dominio.com" />
       <input type="password" name="password" placeholder="password" required />
       <button type="submit">Login</button>
-      <label>Click here to <a href="#">register</a></label>
+      <label>Click here to <a href="cadastro-tela.php">register</a></label>
       <footer>
         <p>&copy 2023 CPS Fatec, All rights reserved</p>
       </footer>

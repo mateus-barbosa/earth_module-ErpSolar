@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --btn-color: #69B9F3;
+  --btn-color-hover: #5193c3;
+  --text-color: #000;
+}
+
 body {
   background-color: #d9d9d9;
-  color: #000;
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
 
   display: grid;
@@ -66,7 +72,7 @@ body {
   border-radius: 18px;
   border: none;
 
-  background-color: #69B9F3;
+  background-color: var(--btn-color);
 
   margin-bottom: 12px;
   font-weight: bold;
@@ -74,7 +80,7 @@ body {
 }
 
 .login_area button:active {
-  background-color: #5193c3;
+  background-color: var(--btn-color-hover);
 }
 
 footer {
@@ -83,4 +89,52 @@ footer {
   
   font-size: 10px;
   font-style: italic;
+}
+
+/* Cadastro */
+
+.form-div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.form-input {
+  width: 282px;
+  height: 35px;
+
+  border: none;
+  border-radius: 18px;
+  text-indent: 10%;
+}
+
+.form-div div {
+  margin: 10px auto;
+  flex-direction: row;
+
+}
+
+.form-button {  
+  padding: 8px 28px;
+  border-radius: 18px;
+  border: none;
+
+  background-color: var(--btn-color);
+
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.form-button:hover {
+  background-color: var(--btn-color-hover);
+  transition: 400ms ease-in-out;
+}
+
+.form-div a {
+  text-decoration: none;
 }
