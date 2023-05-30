@@ -8,6 +8,7 @@
   --btn-color: #69B9F3;
   --btn-color-hover: #5193c3;
   --text-color: #000;
+  --bg-img: url("./assets/capa4.jpg");
 }
 
 body {
@@ -31,7 +32,7 @@ body {
   justify-content: center;
   gap: 20px;
 
-  background: url("./assets/planeta-terra_585359906.jpg") top center no-repeat;
+  background: var(--bg-img) top center no-repeat;
   background-size: auto 100%;
 }
 
