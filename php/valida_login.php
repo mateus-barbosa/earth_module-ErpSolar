@@ -10,7 +10,7 @@ $result = $bd_connection->query($sql);
 
 if ($result->num_rows <= 0) {
   echo "<script> alert('Senha Incorreta') </script>";
-  header('Location: index.php');
+  header('Location: ../index.php');
 }
 while ($row = $result->fetch_assoc()) {
 }
