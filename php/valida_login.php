@@ -11,6 +11,8 @@ $result = $bd_connection->query($sql);
 if ($result->num_rows <= 0) {
   echo "<script> alert('Senha Incorreta') </script>";
   header('Location: ../index.php');
+}else {
+  header('Location: ../dashboard.php');
 }
 while ($row = $result->fetch_assoc()) {
 }
