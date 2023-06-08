@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn-color: #69B9F3;
+  --btn-color-hover: #5193c3;
+  --text-color: #000;
+  --bg-img: url("./assets/capa4.jpg");
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: gray;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+main{
+  width: 100vw;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#columnchart_values{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
